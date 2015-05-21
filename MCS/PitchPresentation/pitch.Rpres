@@ -1,0 +1,32 @@
+pitch
+========================================================
+author: Stanislav Prikhodko
+date: May 20th, 2015
+
+Monte Carlo Simulation
+========================================================
+
+Monte Carlo methods are a broad class of computational algorithms that rely on repeated random sampling to obtain numerical results. They are often used in physical and mathematical problems and are most useful when it is difficult or impossible to use other mathematical methods. 
+
+$$
+dS_{t} = \mu S_{t} d_{t} + \sigma S_{t} dW_{t}
+$$
+
+Input data
+========================================================
+
+
+- **Starting price**
+- **Drift**
+- **Volatility**
+
+```{r}
+summary(cars)
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```
