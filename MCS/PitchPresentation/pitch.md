@@ -16,15 +16,18 @@ Input data for Stock Price simulations
 ========================================================
 
 
-- **Starting price**
-- **Drift**
-- **Volatility**
+- **Starting price** - dollar amount of the stock price. By default $200.00 is used (which is about the price of *S&P 500* in the beggining of 2015) 
+- **Drift** - normal growth rate. For example, use 0.03 if the growth rate is expected to be close to 3% average *annual* inflation rate (in the United States).
+- **Volatility** - defines how volatile and how random this stock prices change over time. For example, the value 0.12 would stand for 12% which is close to S&P 500 volatility. Actually, this is standard deviation of return rates from the recent periods.
 
+  
+
+Mathematical background
+========================================================
 
 $$
 dS_{t} = \mu S_{t} d_{t} + \sigma S_{t} dW_{t}
 $$
- 
 
 Slide With Plot
 ========================================================
