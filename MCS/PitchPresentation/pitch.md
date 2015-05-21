@@ -25,11 +25,33 @@ Input data for Stock Price simulations
 Mathematical background
 ========================================================
 
+The following formula defines general idea:
 $$
 dS_{t} = \mu S_{t} d_{t} + \sigma S_{t} dW_{t}
 $$
 
-Slide With Plot
+This is the actual formula used in the code (the formula is simplified in sake of example):
+$$
+Price_{t} = Price_{t-1}(1 + \frac{drift}{N} + \frac{(Random-\frac{1}{2}) * Volatility}{\sqrt{N}})
+$$
+
+where N is the total number of days in the given period. In the application I use N=255 since there are 255 working days in a year.
+
+By using this formula we indeed have chaotic enough movements of stock price around the median values determined by constant steady growth defined by *drift rate*. 
+
+
+Shiny Application
 ========================================================
+<small style="font-size:.5em">
+The application is published on R-Studio Shiny server:
+https://stas.shinyapps.io/MonteCarloSimulation/
+The full code is not enclosed here, but you can see extremely simplified example of chaotic movements of a price over time below:
+
+```r
+prices <- rep(200,255)
+for (i in 2:255){prices[i] <- prices[i-1]+(runif(1)-0.5)*5}
+plot(prices, type="l")
+```
 
 ![plot of chunk unnamed-chunk-1](pitch-figure/unnamed-chunk-1-1.png) 
+</small>
