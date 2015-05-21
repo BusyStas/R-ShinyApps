@@ -43,14 +43,14 @@ shinyServer(function(input, output) {
     
     
     
-    plot (plotter )
+    plot (plotter, xlab="Day", ylab="Price [$]", sub="Simulated price for 255 working days ahead")
     lines (avg)
     lines (av) 
     lines (minv)
     lines (minv)
     for (i in 1:numberIterations)#daysCount)
     {
-        if (i %% 5 == 0) {
+        if (i %% 5 == 0) { 
           lines(P[i,])
           #lines(P[i,seq(1,daysCount,1)])
         }
