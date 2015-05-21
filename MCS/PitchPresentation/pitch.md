@@ -1,18 +1,18 @@
-pitch
+Monte Carlo Simulation of Stock Price
 ========================================================
 author: Stanislav Prikhodko
 date: May 20th, 2015
 
+
 Monte Carlo Simulation
 ========================================================
 
-Monte Carlo methods are a broad class of computational algorithms that rely on repeated random sampling to obtain numerical results. They are often used in physical and mathematical problems and are most useful when it is difficult or impossible to use other mathematical methods. 
+Monte Carlo methods are a broad class of computational algorithms that rely on repeated random sampling to obtain numerical results. They are often used in physical and mathematical problems and are most useful when it is difficult or impossible to use other mathematical methods. In this research we will apply it for somilating stock price over time with given volatility.
 
-$$
-dS_{t} = \mu S_{t} d_{t} + \sigma S_{t} dW_{t}
-$$
+On high level, many simulations performed in order to see what would be most likely the worst case scenario and the best case  scenario.
 
-Input data
+
+Input data for Stock Price simulations
 ========================================================
 
 
@@ -21,21 +21,12 @@ Input data
 - **Volatility**
 
 
-```r
-summary(cars)
-```
-
-```
-     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  
-```
+$$
+dS_{t} = \mu S_{t} d_{t} + \sigma S_{t} dW_{t}
+$$
+ 
 
 Slide With Plot
 ========================================================
 
-![plot of chunk unnamed-chunk-2](pitch-figure/unnamed-chunk-2-1.png) 
+![plot of chunk unnamed-chunk-1](pitch-figure/unnamed-chunk-1-1.png) 
