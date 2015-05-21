@@ -12,6 +12,7 @@ shinyUI(pageWithSidebar(
           of a stock give a starting price, drift and volatility.
         Drift defines normal expected growth rate.
         Volatility defines how variable are changes in price over time.
+        Please wait several seconds when you run it for the first time.
         "),
       plotOutput('MainPlotContainer')
     )
